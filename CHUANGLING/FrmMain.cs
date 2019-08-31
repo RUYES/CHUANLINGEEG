@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CHUANGLING
+namespace CHUANLING
 {
     public partial class FrmMain : Form
     {
+        
+
         public FrmMain()
         {
             InitializeComponent();
+
         }
     }
 }

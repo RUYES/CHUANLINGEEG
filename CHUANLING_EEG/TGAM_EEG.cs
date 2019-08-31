@@ -110,6 +110,8 @@ namespace CHUANLING_EEG
                                 sport.ReadTo(BitConverter.ToString(new byte[] { 0xaa, 0xaa }));
 
                                 isConnected = true;
+
+                                sport.DiscardInBuffer();
                             }
                             catch (Exception ex)
                             {
@@ -149,31 +151,34 @@ namespace CHUANLING_EEG
             {
                 while (isCache)
                 {
-                    if (BufferData[0] == 0xaa
-                        && BufferData[1] == 0xaa
-                        && BufferData[2] == 0x20
-                        && BufferData[3] == 0x02)
+                    List<byte> vs = BufferData;
+                    if (vs[0] == 0xaa
+                        && vs[1] == 0xaa
+                        && vs[2] == 0x20
+                        && vs[3] == 0x02)
                     {
                         //Signal
-                        para.Signal = BufferData[4];
+                        para.Signal = vs[4];
                         //Delta
-                        para.Delta = GetUInt(BufferData.Skip(7).Take(3));
+                        para.Delta = GetUInt(vs.Skip(7).Take(3));
                         //Thrta
-                        para.Theta = GetUInt(BufferData.Skip(10).Take(3));
+                        para.Theta = GetUInt(vs.Skip(10).Take(3));
                         //LowAlpha
-                        para.LowAlpha = GetUInt(BufferData.Skip(13).Take(3));
+                        para.LowAlpha = GetUInt(vs.Skip(13).Take(3));
                         //HighAlpha
-                        para.HighAlpha = GetUInt(BufferData.Skip(16).Take(3));
+                        para.HighAlpha = GetUInt(vs.Skip(16).Take(3));
                         //LowBeta
-                        para.LowBeta = GetUInt(BufferData.Skip(19).Take(3));
+                        para.LowBeta = GetUInt(vs.Skip(19).Take(3));
                         //HighBeta
-                        para.HighBeta = GetUInt(BufferData.Skip(22).Take(3));
+                        para.HighBeta = GetUInt(vs.Skip(22).Take(3));
                         //LowGamma
-                        para.LowGamma = GetUInt(BufferData.Skip(25).Take(3));
+                        para.LowGamma = GetUInt(vs.Skip(25).Take(3));
+                        //MiddleGamma
+                        para.MiddleGamma= GetUInt(vs.Skip(28).Take(3));
                         //Attention
-                        para.Attention = BufferData[29];
+                        para.Attention = vs[31];
                         //Meditation
-                        para.Meditation = BufferData[31];
+                        para.Meditation = vs[33];
 
                         if (refreshpara != null)
                         {

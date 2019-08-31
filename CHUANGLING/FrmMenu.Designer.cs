@@ -1,4 +1,4 @@
-﻿namespace CHUANGLING
+﻿namespace CHUANLING
 {
     partial class FrmMenu
     {

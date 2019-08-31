@@ -15,7 +15,7 @@ namespace CHUANLING_EEG
 
         public event RefreshPara refreshpara;
 
-        public bool IsClose = true;
+        public bool IsClose = false;
         /// <summary>
         /// 是否链接到有效串口
         /// </summary>
@@ -64,8 +64,8 @@ namespace CHUANLING_EEG
                                 continue;
                             }
 
-                            byte[] tmp = new byte[len + 3];
-                            BufferPort.CopyTo(0, tmp, 0, len + 3);
+                            byte[] tmp = new byte[len + 3 + 1];
+                            BufferPort.CopyTo(0, tmp, 0, len + 3 + 1);
                             BufferPort.RemoveRange(0, len + 3);
                             BufferData.Clear();
                             BufferData.AddRange(tmp);
@@ -83,114 +83,168 @@ namespace CHUANLING_EEG
                 catch (Exception ex)
                 {
 
-                    throw;
+                    //    throw;
                 }
 
 
             });
         }
-
+        Thread th_AutoConnect;
         public void InitEEG()
         {
-            Thread th_AutoConnect = new Thread(() =>
-            {
-                while (true)
-                {
-                    while (!isConnected)
-                    {
-                        string[] allPorts = System.IO.Ports.SerialPort.GetPortNames();
-                        foreach (string item in allPorts)
-                        {
+            th_AutoConnect = new Thread(() =>
+           {
+               while (true)
+               {
+                   while (!isConnected)
+                   {
+                       string[] allPorts = System.IO.Ports.SerialPort.GetPortNames();
+                       foreach (string item in allPorts)
+                       {
 
-                            sport.PortName = item;
-                            try
-                            {
-                                sport.Open();
+                           sport.PortName = item;
+                           try
+                           {
+                               sport.Open();
+                               byte[] vs = new byte[50];
+                               sport.Read(vs, 0, 50);
 
-                                sport.ReadTo(BitConverter.ToString(new byte[] { 0xaa, 0xaa }));
+                               if (Array.IndexOf(vs, new byte[] { 0xaa, 0xaa }) != 0)
+                               {
+                                   isConnected = true;
+                                   break;
+                               }
 
-                                isConnected = true;
-                            }
-                            catch (Exception ex)
-                            {
-                                sport.Close();
 
-                            }
+                           }
+                           catch (Exception ex)
+                           {
+                               sport.Close();
 
-                            Thread.Sleep(200);
+                           }
 
-                        }
-                        Thread.Sleep(1000);
+                           Thread.Sleep(200);
 
-                    }
-                    while (isConnected)
-                    {
-                        if (!sport.IsOpen)
-                        {
-                            sport.Close();
-                            isConnected = false;
-                        }
-                        Thread.Sleep(1000);
-                    }
-                    Thread.Sleep(1000);
-                }
-            });
+                       }
+                       Thread.Sleep(1000);
+
+                   }
+                   while (isConnected)
+                   {
+                       if (!sport.IsOpen)
+                       {
+                           sport.Close();
+                           isConnected = false;
+                       }
+                       Thread.Sleep(1000);
+                   }
+                   Thread.Sleep(1000);
+               }
+           });
             th_AutoConnect.IsBackground = true;
             th_AutoConnect.Start();
         }
 
         public EEG_Para para = new EEG_Para();
 
+
+        Thread th_UpdataEEG;
         public void UpdateEEGPara()
         {
-
-
-            while (true)
+            th_UpdataEEG = new Thread(() =>
             {
-                while (isCache)
+                while (true)
                 {
-                    if (BufferData[0] == 0xaa
-                        && BufferData[1] == 0xaa
-                        && BufferData[2] == 0x20
-                        && BufferData[3] == 0x02)
+                    while (isCache && BufferData.Count == 36)
                     {
-                        //Signal
-                        para.Signal = BufferData[4];
-                        //Delta
-                        para.Delta = GetUInt(BufferData.Skip(7).Take(3));
-                        //Thrta
-                        para.Theta = GetUInt(BufferData.Skip(10).Take(3));
-                        //LowAlpha
-                        para.LowAlpha = GetUInt(BufferData.Skip(13).Take(3));
-                        //HighAlpha
-                        para.HighAlpha = GetUInt(BufferData.Skip(16).Take(3));
-                        //LowBeta
-                        para.LowBeta = GetUInt(BufferData.Skip(19).Take(3));
-                        //HighBeta
-                        para.HighBeta = GetUInt(BufferData.Skip(22).Take(3));
-                        //LowGamma
-                        para.LowGamma = GetUInt(BufferData.Skip(25).Take(3));
-                        //Attention
-                        para.Attention = BufferData[29];
-                        //Meditation
-                        para.Meditation = BufferData[31];
-
-                        if (refreshpara != null)
+                        try
                         {
-                            refreshpara(para);
+                            List<byte> BufferList = BufferData;
+                            if (BufferList[0] == 0xaa
+                                && BufferList[1] == 0xaa
+                                && BufferList[2] == 0x20
+                                && BufferList[3] == 0x02)
+                            {
+                                try
+                                {
+                                    EEG_Para para = this.para;
+                                    lock (para)
+                                    {
+
+
+                                        List<byte> vs = BufferList.GetRange(7, 3);
+                                        //Signal
+                                        para.Signal = BufferList[4];
+                                        //Delta
+                                        para.Delta = GetUInt(BufferList.GetRange(7, 3));
+                                        //Thrta
+                                        para.Theta = GetUInt(BufferList.GetRange(10, 3));
+                                        //LowAlpha
+                                        para.LowAlpha = GetUInt(BufferList.GetRange(13, 3));
+                                        //HighAlpha
+                                        para.HighAlpha = GetUInt(BufferList.GetRange(16, 3));
+                                        //LowBeta
+                                        para.LowBeta = GetUInt(BufferList.GetRange(19, 3));
+                                        //HighBeta
+                                        para.HighBeta = GetUInt(BufferList.GetRange(22, 3));
+                                        //LowGamma
+                                        para.LowGamma = GetUInt(BufferList.GetRange(25, 3));
+                                        //MiddleGamma
+                                        para.MiddleGamma = GetUInt(BufferList.GetRange(28, 3));
+
+
+                                        //Attention
+                                        para.Attention = BufferList[32];
+                                        //Meditation
+                                        para.Meditation = BufferList[34];
+                                    }
+
+                                    this.para = para;
+                                }
+                                catch (Exception ex)
+                                {
+
+                                    // throw;
+                                }
+
+
+
+                                if (refreshpara != null)
+                                {
+                                    refreshpara(para);
+                                }
+                            }
+                            else
+                            {
+
+                            };
                         }
+                        catch (Exception ex)
+                        {
+
+                            //throw;
+                        }
+
+
                     }
-                    else BufferData.RemoveAt(0);
+                    Thread.Sleep(500);
                 }
-                Thread.Sleep(20);
-            }
+            });
+
+            th_UpdataEEG.IsBackground = true;
+            th_UpdataEEG.Start();
+
+
+
         }
 
-        private UInt32 GetUInt(IEnumerable<byte> enumerable)
+
+
+        private UInt32 GetUInt(List<byte> enumerable)
         {
-            byte Hb = enumerable.ToArray()[0];
-            byte Mb = enumerable.ToArray()[1];
-            byte Lb = enumerable.ToArray()[2];
+            byte Hb = enumerable[0];
+            byte Mb = enumerable[1];
+            byte Lb = enumerable[2];
             UInt32 result = 0;
             result = (UInt32)((Hb << 16) | (Mb << 8) | Lb);
             return result;

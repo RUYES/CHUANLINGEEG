@@ -89,5 +89,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CHUANLING_EEG_NET4\CHUANLING_EEG_NET4.csproj">
+      <Project>{5a5f6d42-7c6c-4323-95d0-b932eed88f51}</Project>
+      <Name>CHUANLING_EEG_NET4</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
