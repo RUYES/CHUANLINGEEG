@@ -83,6 +83,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLoad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,11 +119,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DBServices.cs" />
     <Compile Include="Services\SqliteHelper.cs" />
+    <Compile Include="Splasher.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLoad.resx">
       <DependentUpon>FrmLoad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -140,12 +156,65 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="脑波\登录页面\hicetea_p0_7.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CHUANLING_EEG_NET4\CHUANLING_EEG_NET4.csproj">
       <Project>{5a5f6d42-7c6c-4323-95d0-b932eed88f51}</Project>
       <Name>CHUANLING_EEG_NET4</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\登录页面\hicetea_p0_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\登录页面\hicetea_p0_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\登录页面\hicetea_p0_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\登录页面\hicetea_p0_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\主页面\hicetea_p0_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\微信图片_20190901171129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="脑波\参数监测页面\hicetea_p0_3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
