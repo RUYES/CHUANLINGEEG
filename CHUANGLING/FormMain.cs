@@ -78,6 +78,7 @@ namespace CHUANLING
         {
             thread = new Thread(() =>
             {
+
                 Dictionary<DateTime, EEG_Para> keyValues = new Dictionary<DateTime, EEG_Para>();
                 string tableName = "Test" + DateTime.Now.ToString("yyyyMMddhhmmss");
                 Services.DBServices.AddTrainTable(tableName);
