@@ -14,7 +14,7 @@ namespace CHUANLING.Models
             Phone = phone;
             Password = passwd;
 
-            Name = Sex = Years = Height = Weight = Province = City = County = Address = QQ = Wechat = Email = Remarks = "";
+            Sex = Years = Height = Weight = Province = City = County = Address = QQ = Wechat = Email = Remarks = "";
 
 
         }
