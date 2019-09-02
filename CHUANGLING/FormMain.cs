@@ -260,7 +260,6 @@ namespace CHUANLING
             {
                 DSkin.Forms.DSkinMessageBox.Show("添加用户失败！");
             }
-
         }
         string selectUser = "";
         private void userList_SelectedItemChanged(object sender, DSkin.Controls.DSkinGridListEventArgs e)
