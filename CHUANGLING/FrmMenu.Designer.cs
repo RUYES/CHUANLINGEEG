@@ -279,20 +279,22 @@
             // dSkinLabel1
             // 
             this.dSkinLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.dSkinLabel1.Font = new System.Drawing.Font("微软雅黑 Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dSkinLabel1.Location = new System.Drawing.Point(620, 459);
+            this.dSkinLabel1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dSkinLabel1.ForeColor = System.Drawing.Color.White;
+            this.dSkinLabel1.Location = new System.Drawing.Point(612, 462);
             this.dSkinLabel1.Name = "dSkinLabel1";
-            this.dSkinLabel1.Size = new System.Drawing.Size(137, 28);
+            this.dSkinLabel1.Size = new System.Drawing.Size(154, 25);
             this.dSkinLabel1.TabIndex = 2;
             this.dSkinLabel1.Text = "版本号:V1.0.0.0";
             // 
             // lblUsername
             // 
             this.lblUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblUsername.Font = new System.Drawing.Font("微软雅黑 Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblUsername.Location = new System.Drawing.Point(16, 459);
+            this.lblUsername.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
+            this.lblUsername.Location = new System.Drawing.Point(8, 462);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(144, 28);
+            this.lblUsername.Size = new System.Drawing.Size(144, 25);
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "欢迎您，管理员";
             // 

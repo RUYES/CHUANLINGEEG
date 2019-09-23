@@ -93,6 +93,9 @@ namespace CHUANLING_EEG
         }
 
 
+        private string date;
+        private string time;
+
         /// <summary>
         /// 耳机是否带好
         /// </summary>
@@ -103,6 +106,9 @@ namespace CHUANLING_EEG
                 return (signal == 29 || signal == 54 || signal == 55 || signal == 56 || signal == 80 || signal == 81 || signal == 82 || signal == 107 || signal == 200) ? false : true;
             }
         }
+
+        public string Date { get => date; set => date = value; }
+        public string Time { get => time; set => time = value; }
 
         #endregion
     }

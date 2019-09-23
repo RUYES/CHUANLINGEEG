@@ -46,10 +46,11 @@
             this.txtUseName.Borders.RightWidth = 0;
             this.txtUseName.Borders.TopWidth = 0;
             this.txtUseName.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtUseName.Location = new System.Drawing.Point(138, 227);
+            this.txtUseName.Location = new System.Drawing.Point(119, 194);
             this.txtUseName.Name = "txtUseName";
             this.txtUseName.Size = new System.Drawing.Size(236, 35);
             this.txtUseName.TabIndex = 0;
+            this.txtUseName.Text = "Admin";
             this.txtUseName.TransparencyKey = System.Drawing.Color.Empty;
             this.txtUseName.WaterFont = new System.Drawing.Font("微软雅黑 Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtUseName.WaterText = "请输入用户名";
@@ -66,8 +67,9 @@
             this.txtPasswd.Borders.RightWidth = 0;
             this.txtPasswd.Borders.TopWidth = 0;
             this.txtPasswd.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtPasswd.Location = new System.Drawing.Point(138, 302);
+            this.txtPasswd.Location = new System.Drawing.Point(119, 258);
             this.txtPasswd.Name = "txtPasswd";
+            this.txtPasswd.PasswordChar = '*';
             this.txtPasswd.Size = new System.Drawing.Size(236, 35);
             this.txtPasswd.TabIndex = 0;
             this.txtPasswd.TransparencyKey = System.Drawing.Color.Empty;
@@ -84,14 +86,14 @@
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLogin.HoverColor = System.Drawing.Color.Empty;
             this.btnLogin.HoverImage = null;
-            this.btnLogin.Location = new System.Drawing.Point(412, 291);
+            this.btnLogin.Location = new System.Drawing.Point(422, 244);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.NormalImage = global::CHUANLING.Properties.Resources.hicetea_p0_2;
             this.btnLogin.PressColor = System.Drawing.Color.Empty;
             this.btnLogin.PressedImage = null;
             this.btnLogin.Radius = 10;
             this.btnLogin.ShowButtonBorder = true;
-            this.btnLogin.Size = new System.Drawing.Size(108, 45);
+            this.btnLogin.Size = new System.Drawing.Size(77, 33);
             this.btnLogin.TabIndex = 1;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.TextPadding = 0;
@@ -105,26 +107,27 @@
             this.btnQuit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnQuit.HoverColor = System.Drawing.Color.Empty;
             this.btnQuit.HoverImage = null;
-            this.btnQuit.Location = new System.Drawing.Point(546, 291);
+            this.btnQuit.Location = new System.Drawing.Point(505, 244);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.NormalImage = global::CHUANLING.Properties.Resources.hicetea_p0_1;
             this.btnQuit.PressColor = System.Drawing.Color.Empty;
             this.btnQuit.PressedImage = null;
             this.btnQuit.Radius = 10;
             this.btnQuit.ShowButtonBorder = true;
-            this.btnQuit.Size = new System.Drawing.Size(108, 45);
+            this.btnQuit.Size = new System.Drawing.Size(77, 33);
             this.btnQuit.TabIndex = 1;
             this.btnQuit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnQuit.TextPadding = 0;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // dSkinPictureBox1
             // 
             this.dSkinPictureBox1.Image = global::CHUANLING.Properties.Resources.hicetea_p0_6;
             this.dSkinPictureBox1.Images = new System.Drawing.Image[] {
         ((System.Drawing.Image)(global::CHUANLING.Properties.Resources.hicetea_p0_6))};
-            this.dSkinPictureBox1.Location = new System.Drawing.Point(74, 218);
+            this.dSkinPictureBox1.Location = new System.Drawing.Point(55, 190);
             this.dSkinPictureBox1.Name = "dSkinPictureBox1";
-            this.dSkinPictureBox1.Size = new System.Drawing.Size(52, 52);
+            this.dSkinPictureBox1.Size = new System.Drawing.Size(42, 43);
             this.dSkinPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dSkinPictureBox1.SudokuDrawBackImage = true;
             this.dSkinPictureBox1.TabIndex = 2;
@@ -134,9 +137,9 @@
             this.dSkinPictureBox2.Image = global::CHUANLING.Properties.Resources.hicetea_p0_3;
             this.dSkinPictureBox2.Images = new System.Drawing.Image[] {
         ((System.Drawing.Image)(global::CHUANLING.Properties.Resources.hicetea_p0_3))};
-            this.dSkinPictureBox2.Location = new System.Drawing.Point(74, 293);
+            this.dSkinPictureBox2.Location = new System.Drawing.Point(55, 254);
             this.dSkinPictureBox2.Name = "dSkinPictureBox2";
-            this.dSkinPictureBox2.Size = new System.Drawing.Size(52, 52);
+            this.dSkinPictureBox2.Size = new System.Drawing.Size(42, 43);
             this.dSkinPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dSkinPictureBox2.SudokuDrawBackImage = true;
             this.dSkinPictureBox2.TabIndex = 2;
@@ -148,7 +151,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::CHUANLING.Properties.Resources.hicetea_p0_7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(700, 400);
+            this.ClientSize = new System.Drawing.Size(623, 346);
             this.Controls.Add(this.dSkinPictureBox2);
             this.Controls.Add(this.dSkinPictureBox1);
             this.Controls.Add(this.btnQuit);

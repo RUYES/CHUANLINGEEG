@@ -29,21 +29,31 @@
         private void InitializeComponent()
         {
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
+            this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.SuspendLayout();
             // 
             // cartesianChart1
             // 
             this.cartesianChart1.Location = new System.Drawing.Point(12, 12);
             this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(832, 426);
+            this.cartesianChart1.Size = new System.Drawing.Size(504, 281);
             this.cartesianChart1.TabIndex = 0;
             this.cartesianChart1.Text = "cartesianChart1";
+            // 
+            // pieChart1
+            // 
+            this.pieChart1.Location = new System.Drawing.Point(538, 41);
+            this.pieChart1.Name = "pieChart1";
+            this.pieChart1.Size = new System.Drawing.Size(240, 252);
+            this.pieChart1.TabIndex = 1;
+            this.pieChart1.Text = "pieChart1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 450);
+            this.Controls.Add(this.pieChart1);
             this.Controls.Add(this.cartesianChart1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -55,6 +65,7 @@
         #endregion
 
         private LiveCharts.WinForms.CartesianChart cartesianChart1;
+        private LiveCharts.WinForms.PieChart pieChart1;
     }
 }
 

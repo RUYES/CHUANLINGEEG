@@ -123,6 +123,16 @@ namespace CHUANLING.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap hicetea_p0_22 {
+            get {
+                object obj = ResourceManager.GetObject("hicetea_p0_22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap hicetea_p0_3 {
             get {
                 object obj = ResourceManager.GetObject("hicetea_p0_3", resourceCulture);
@@ -146,6 +156,16 @@ namespace CHUANLING.Properties {
         internal static System.Drawing.Bitmap hicetea_p0_32 {
             get {
                 object obj = ResourceManager.GetObject("hicetea_p0_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap hicetea_p0_33 {
+            get {
+                object obj = ResourceManager.GetObject("hicetea_p0_33", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +236,16 @@ namespace CHUANLING.Properties {
         internal static System.Drawing.Bitmap hicetea_p0_8 {
             get {
                 object obj = ResourceManager.GetObject("hicetea_p0_8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap hicetea_p0_81 {
+            get {
+                object obj = ResourceManager.GetObject("hicetea_p0_81", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

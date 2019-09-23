@@ -7,6 +7,11 @@ namespace CHUANLING.Models
 {
     public class User
     {
+        public User()
+        {
+
+        }
+
         public User(string username, string name, string passwd = "000000", string phone = "136********")
         {
             UserName = username;

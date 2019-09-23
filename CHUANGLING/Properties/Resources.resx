@@ -118,58 +118,67 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="hicetea_p0_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\登录页面\hicetea_p0_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hicetea_p0_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hicetea_p0_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\脑波\主页面\hicetea_p0_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hicetea_p0_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\主页面\hicetea_p0_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\主页面\hicetea_p0_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\登录页面\hicetea_p0_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\主页面\hicetea_p0_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\登录页面\hicetea_p0_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\主页面\hicetea_p0_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\参数监测页面\hicetea_p0_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\主页面\hicetea_p0_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\主页面\hicetea_p0_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\登录页面\hicetea_p0_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\主页面\hicetea_p0_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\登录页面\hicetea_p0_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hicetea_p0_71" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\主页面\hicetea_p0_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hicetea_p0_81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hicetea_p0_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\脑波\主页面\hicetea_p0_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hicetea_p0_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\脑波\主页面\hicetea_p0_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hicetea_p0_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\登录页面\hicetea_p0_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="微信图片_20190901171129" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\微信图片_20190901171129.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\登录页面\hicetea_p0_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\登录页面\hicetea_p0_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\参数监测页面\hicetea_p0_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\登录页面\hicetea_p0_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\登录页面\hicetea_p0_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hicetea_p0_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\脑波\主页面\hicetea_p0_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

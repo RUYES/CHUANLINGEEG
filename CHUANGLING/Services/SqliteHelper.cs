@@ -10,7 +10,7 @@ namespace CHUANLING.Services
     public class SqliteHelper
     {
         //连接字符串
-        private static readonly string str = @"Data Source=C:\Users\rzzss\Desktop\CHUANLING.db;Version=3;UseUTF16Encoding=True;";
+        private static readonly string str = @"Data Source=CHUANLING.db;Version=3;UseUTF16Encoding=True;";
 
         /// <summary>
         /// 增删改

@@ -134,8 +134,8 @@ namespace CHUANLING.Services
         public static int InsertTrainTable(string tableName, EEG_Para item)
         {
             Dictionary<string, string> pairs = new Dictionary<string, string>();
-            pairs.Add("Date", DateTime.Now.Date.ToString());
-            pairs.Add("Time", DateTime.Now.TimeOfDay.ToString());
+            pairs.Add("Date", DateTime.Now.ToString("yyyy/MM/dd"));
+            pairs.Add("Time", DateTime.Now.ToString("HH:mm:ss"));
             pairs.Add("Delta", item.Delta.ToString());
             pairs.Add("Theta", item.Theta.ToString());
             pairs.Add("LowAlpha", item.LowAlpha.ToString());
